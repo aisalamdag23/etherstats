@@ -1,0 +1,32 @@
+general:
+  app_name: etherstats
+  http_addr: :8080
+  http_write_timeout_sec: 15
+  http_read_timeout_sec: 15
+  http_idle_timeout_sec: 60
+  graceful_shutdown_wait_time_sec: 3
+  log_level: debug
+
+postgresdb:
+  driver: pgx
+  credentials:
+    host: localhost
+    port: 5432
+    name: REDACTED
+    user: REDACTED
+    pass: REDACTED
+  conn_timeout: 5
+  max_open_conn: 50
+  conn_lifetime_sec: 60
+
+redisdb:
+  credentials:
+    host: localhost
+    port: 6379
+
+alchemy:
+    api_key: REDACTED
+    mainnet_url: https://eth-mainnet.g.alchemy.com/v2
+    cache_ttl_sec: 10
+
+  
