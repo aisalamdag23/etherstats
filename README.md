@@ -13,7 +13,7 @@ EtherStats is a Go application that provides Ethereum network statistics: gas pr
 1. **One-liner quick-start**
     Just need a fresh local stack? Run:
     ```sh
-    make config
+    make db-reload
     ```
     and jump to **Start the server**.
 
